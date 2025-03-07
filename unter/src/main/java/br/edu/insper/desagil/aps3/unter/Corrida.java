@@ -44,11 +44,11 @@ public class Corrida {
         return nota;
     }
 
-    public void setNotaPassageiro(int notaPassageiro) {
+    public void avaliaPassageiro(int notaPassageiro) {
         this.notaPassageiro = notaTruncada(notaPassageiro);
     }
 
-    public void setNotaMotorista(int notaMotorista) {
+    public void avaliaMotorista(int notaMotorista) {
         this.notaMotorista = notaTruncada(notaMotorista);
     }
 }

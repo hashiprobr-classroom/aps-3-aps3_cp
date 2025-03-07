@@ -15,7 +15,7 @@ public class Central {
         corridas.add(corrida);
     }
 
-    public double avaliaPassageiro(String cpf){
+    public double mediaPassageiro(String cpf){
         int soma = 0;
         int quantidade = 0;
         for (Corrida corrida : corridas){
@@ -23,7 +23,7 @@ public class Central {
                 int nota = corrida.getNotaPassageiro();
                 if (nota > 0){
                     soma += nota;
-                    quantidade++;
+                    quantidade+= 1;
                 }
             }
         }
@@ -36,7 +36,7 @@ public class Central {
 
     }
 
-    public double avaliaMotorista(String cpf) {
+    public double mediaMotorista(String cpf) {
         int soma = 0;
         int quantidade = 0;
         for (Corrida corrida : corridas) {
@@ -44,7 +44,7 @@ public class Central {
                 int nota = corrida.getNotaMotorista();
                 if (nota > 0) {
                     soma += nota;
-                    quantidade++;
+                    quantidade+= 1;
                 }
             }
         }
